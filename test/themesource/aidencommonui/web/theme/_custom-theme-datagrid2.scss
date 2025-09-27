@@ -1,0 +1,110 @@
+
+button.rowButton {
+    border: none;
+    background-color: transparent;
+    padding: 2px;
+    font-size: 20px;
+    line-height: 0.9;
+}
+
+button.rowButtonPrimary {
+    color: $brand-primary;
+}
+
+button.rowButtonSuccess {
+    color: $brand-success;
+}
+button.rowButtonSuccess:hover {
+    background-color: $brand-success;
+    color: white;
+}
+
+button.rowButtonWarning {
+    color: $brand-warning;
+}
+button.rowButtonWarning:hover {
+    background-color: $brand-warning;
+    color: white;
+}
+
+button.rowButtonDanger {
+    color: $brand-danger;
+}
+button.rowButtonDanger:hover {
+    background-color: $brand-danger;
+    color: white;
+}
+
+// Can be used to reserve height in the grid row for buttons, these could be higher than plain texts
+div.rowbuttonspacer {
+    position: relative;
+}
+
+// The button container is hidden normally, prepare basic style
+div.rowbuttoncontainer, div.rowbuttoncontainer-inline {
+    .btn {
+        margin-right: $spacing-smaller;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+div.rowbuttoncontainer {
+    display: none;
+    background-color: $bg-color;
+    padding-left: 2px;
+    padding-right: 2px;
+    position: absolute;
+    right: 0;
+    top: -14px;
+}
+
+// When the grid has column selection, set a different right position
+// to position the buttons on the right of the grid, 
+// over the hidden area under the column selector eye button
+div.rowbuttoncontainer.grid-has-columnselector {
+    right: -45px;
+}
+
+// When hovering over the grid row, show the button container.
+// Use flex to make sure the buttons are shown horizontally.
+.table-hover {
+    .tr:hover > .td {
+        div.rowbuttoncontainer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+    }
+}
+.table-hover {
+    .tr > .td {
+        div.rowbuttoncontainer-inline {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+    }
+}
+.table-hover {
+    .tr:not(:hover) > .td {
+        div.rowbuttoncontainer-inline {
+            .btn {
+                color: $datagrid2-inactive-inline-rowbutton-color;
+            }
+        }
+    }
+}
+
+.widget-datagrid.hide-datagrid2-selection-count  {
+    .widget-datagrid-paging-bottom {
+        color: transparent;
+        .widget-datagrid-selection-count {
+            display: none;
+        }
+        .widget-datagrid-clear-selection {
+            display: none;
+        }
+    }
+}

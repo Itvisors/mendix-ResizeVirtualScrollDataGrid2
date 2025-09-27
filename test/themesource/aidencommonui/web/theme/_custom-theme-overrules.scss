@@ -1,0 +1,57 @@
+
+@if not $exclude-overrule-dataview-controls-spacing {
+    div.mx-dataview-controls {
+        padding-left: $layout-spacing-left;
+        .mx-button {
+            margin-bottom: $spacing-medium;
+        }
+    }
+}
+
+div.widget-language-selector.languageSelectorLight {
+     .current-language-text {
+        color: $navigation-color;
+    }
+    .arrow-image {
+        background-image: url(resources/arrow_white.svg);
+    }
+}
+
+// Force compact grid $datagrid2-spacing is declared in the variables file with a default to allow overruling the value
+@if not $exclude-overrule-datagrid2-spacing {
+    .widget-datagrid .table {
+        .th {
+            padding: $datagrid2-spacing;
+
+            .filter-selectors {
+                margin: 0 $datagrid2-spacing;
+            }
+        }
+
+        &:has(.th .column-container .filter:not(:empty)) {
+            .th {
+                &.column-selector {
+                    padding: $datagrid2-spacing 0;
+                }
+                &.widget-datagrid-col-select {
+                    padding-bottom: calc($datagrid2-spacing + 11px);
+                }
+            }
+        }
+
+        .td {
+            padding: $datagrid2-spacing;
+        }
+
+        .dropdown-container .dropdown-list {
+            margin: 0 $datagrid2-spacing;
+        }
+
+        .column-selector {
+            /* Column content */
+            .column-selector-content {
+                padding-right: $datagrid2-spacing;
+            }
+        }
+    }
+}

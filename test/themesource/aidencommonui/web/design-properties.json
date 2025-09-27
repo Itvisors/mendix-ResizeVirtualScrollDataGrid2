@@ -1,0 +1,144 @@
+{
+    "DivContainer": [
+        {
+            "name": "Control group",
+            "type": "Toggle",
+            "description": "Add a little spacing between buttons in this container. Also useful in DataGrid 2 header",
+            "class": "controlgroup"
+        },
+        {
+            "name": "Row button spacer (Aiden)",
+            "type": "Toggle",
+            "description": "The outer container in the DataGrid 2 row button column",
+            "class": "rowbuttonspacer"
+        },
+        {
+            "name": "Grid has column selector (Aiden)",
+            "type": "Toggle",
+            "description": "Turn on for hover row buttons when the grid allows column selection",
+            "class": "grid-has-columnselector"
+        },
+        {
+            "name": "Row button container (Aiden)",
+            "type": "Dropdown",
+            "description": "The inner container in the DataGrid 2 row button column",
+            "options": [
+                {
+                    "name": "Hover buttons",
+                    "class": "rowbuttoncontainer"
+                },
+                {
+                    "name": "Inline buttons",
+                    "class": "rowbuttoncontainer-inline"
+                }
+            ]
+        },
+        {
+            "name": "Maximum width (Aiden)",
+            "type": "Dropdown",
+            "description": "Set a maximum width for small content",
+            "options": [
+                {
+                    "name": "200px",
+                    "class": "max-width-200"
+                },
+                {
+                    "name": "400px",
+                    "class": "max-width-400"
+                },
+                {
+                    "name": "600px",
+                    "class": "max-width-600"
+                },
+                {
+                    "name": "800px",
+                    "class": "max-width-800"
+                },
+                {
+                    "name": "1000px",
+                    "class": "max-width-1000"
+                },
+                {
+                    "name": "1400px",
+                    "class": "max-width-1400"
+                }
+            ]
+        }
+
+    ],
+    "DynamicText": [
+        {
+            "name": "Control label (Aiden)",
+            "type": "Toggle",
+            "description": "Make the text appear as control label",
+            "class": "custom-control-label"
+        }
+    ],
+    "Button": [
+        {
+            "name": "Custom styles (Aiden)",
+            "type": "Dropdown",
+            "description": "Custom styles",
+            "options": [
+                {
+                    "name": "Transparent",
+                    "class": "no-background"
+                }
+            ]
+        },
+        {
+            "name": "Row button styles (Aiden)",
+            "type": "Dropdown",
+            "description": "Row button styles for use in DataGrid 2",
+            "options": [
+                {
+                    "name": "Primary",
+                    "class": "rowButton rowButtonPrimary"
+                },
+                {
+                    "name": "Success",
+                    "class": "rowButton rowButtonSuccess"
+                },
+                {
+                    "name": "Warning",
+                    "class": "rowButton rowButtonWarning"
+                },
+                {
+                    "name": "Danger",
+                    "class": "rowButton rowButtonDanger"
+                }
+            ]
+        }
+
+    ],
+    "com.mendix.widget.web.datagrid.Datagrid": [
+        {
+            "name": "Hide selection (Aiden)",
+            "type": "Toggle",
+            "description": "Hide the selection count below the grid when selection is enabled",
+            "class": "hide-datagrid2-selection-count"
+        }
+    ],
+    "com.mendix.widget.web.gallery.Gallery": [
+        {
+            "name": "Hide selection (Aiden)",
+            "type": "Toggle",
+            "description": "Hide the selection count below the gallery when selection is enabled",
+            "class": "hide-gallery-selection-count"
+        }
+    ],
+    "ListView": [
+        {
+            "name": "Transparent (Aiden)",
+            "type": "Toggle",
+            "description": "Make the listview transparent",
+            "class": "transparentListview"
+        },
+        {
+            "name": "Hide empty (Aiden)",
+            "type": "Toggle",
+            "description": "Do not show the no items message",
+            "class": "listview-hideempty"
+        }
+    ]
+}

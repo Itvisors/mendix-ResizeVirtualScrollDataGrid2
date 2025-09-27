@@ -1,0 +1,12 @@
+
+.widget-gallery.hide-gallery-selection-count  {
+    .widget-gallery-fc-start {
+        color: transparent;
+        .widget-gallery-selection-count {
+            display: none;
+        }
+        .widget-gallery-clear-selection {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.btn-no-background,
+.btn-no-background:focus,
+.btn-no-background:visited,
+.btn-no-background:any-link,
+.btn-no-background:active {
+        background-color: transparent;
+    border: none;
+    &:hover {
+        background-color: transparent;
+        border: none;
+        color: $link-hover-color;
+    }
+}

@@ -1,0 +1,199 @@
+{
+    "DynamicText": [
+        {
+            "name": "Color",
+            "type": "Dropdown",
+            "description": "Change the color of text. (ITV)",
+            "options": [
+                {
+                    "name": "Contrast low",
+                    "class": "textContrastLow"
+                }
+            ]
+        },
+        {
+            "name": "Single line",
+            "type": "Toggle",
+            "description": "Show a single line only. Show ellipsis (...) if necessary. (ITV)",
+            "class": "singleLineTextEllipsis"
+        }
+    ],
+
+    "DivContainer": [
+        {
+            "name": "With border",
+            "type": "Dropdown",
+            "description": "Show border. (ITV)",
+            "options": [
+                {
+                    "name": "Primary medium inner spacing",
+                    "class": "containerBorderPrimaryInnerMedium"
+                },
+                {
+                    "name": "Primary small inner spacing",
+                    "class": "containerBorderPrimaryInnerSmall"
+                }
+            ]
+        }
+    ],
+
+    "ActionButton": [
+
+        {
+            "name": "As text",
+            "type": "Toggle",
+            "description": "Show button as text. (ITV)",
+            "class": "btnAsText"
+        },
+
+        {
+            "name": "Transparent",
+            "type": "Toggle",
+            "description": "Transparent, no border. (ITV)",
+            "class": "btnTransparentNoBorder"
+        },
+
+        {
+            "name": "In header",
+            "type": "Toggle",
+            "description": "Less vertical margin for use in headers. (ITV)",
+            "class": "btnInHeader"
+        },
+
+        {
+            "name": "Dashboard button",
+            "type": "Dropdown",
+            "description": "Dashboard button (ITV)",
+            "options": [
+                {
+                    "name": "Badge, primary",
+                    "class": "btnDashboardBadgePrimary"
+                },
+                {
+                    "name": "Badge, success",
+                    "class": "btnDashboardBadgeSuccess"
+                },
+                {
+                    "name": "Badge, warning",
+                    "class": "btnDashboardBadgeWarning"
+                },
+                {
+                    "name": "Badge, danger",
+                    "class": "btnDashboardBadgedanger"
+                },
+                {
+                    "name": "Icon",
+                    "class": "btnDashboardIcon"
+                }
+            ]
+        },
+
+        {
+            "name": "Icon color",
+            "type": "Dropdown",
+            "description": "Icon color (ITV)",
+            "options": [
+                {
+                    "name": "Success",
+                    "class": "btnIconColorSuccess"
+                },
+                {
+                    "name": "Warning",
+                    "class": "btnIconColorWarning"
+                },
+                {
+                    "name": "Danger",
+                    "class": "btnIconColorDanger"
+                },
+                {
+                    "name": "Secondary",
+                    "class": "btnIconColorSecondary"
+                },
+                {
+                    "name": "White",
+                    "class": "btnIconColorWhite"
+                },
+                {
+                    "name": "Disabled",
+                    "class": "btnIconColorDisabled"
+                }
+            ]
+        },
+
+        {
+            "name": "Text color",
+            "type": "Dropdown",
+            "description": "Text color (ITV)",
+            "options": [
+                {
+                    "name": "Success",
+                    "class": "btnCaptionColorSuccess"
+                },
+                {
+                    "name": "Warning",
+                    "class": "btnCaptionColorWarning"
+                },
+                {
+                    "name": "Danger",
+                    "class": "btnCaptionColorDanger"
+                },
+                {
+                    "name": "Secondary",
+                    "class": "btnCaptionColorSecondary"
+                },
+                {
+                    "name": "White",
+                    "class": "btnCaptionColorWhite"
+                },
+                {
+                    "name": "Disabled",
+                    "class": "btnCaptionColorDisabled"
+                }
+            ]
+        },
+
+        {
+            "name": "Disabled",
+            "type": "Dropdown",
+            "description": "Disabled classes, to be used i.s.o. Mendix supplied button type (ITV)",
+            "options": [
+                {
+                    "name": "Primary disabled",
+                    "class": "btnPrimaryDisabled"
+                },
+                {
+                    "name": "Secondary disabled",
+                    "class": "btnSecondaryDisabled"
+                },
+                {
+                    "name": "Success disabled",
+                    "class": "btnSuccessDisabled"
+                },
+                {
+                    "name": "Warning disabled",
+                    "class": "btnWarningDisabled"
+                },
+                {
+                    "name": "Danger disabled",
+                    "class": "btnDangerDisabled"
+                }
+            ]
+        },
+
+        {
+            "name": "Text align",
+            "type": "Dropdown",
+            "description": "Text align, centered by default. (ITV)",
+            "options": [
+                {
+                    "name": "Start",
+                    "class": "btnTextAlignStart"
+                },
+                {
+                    "name": "End",
+                    "class": "btnTextAlignEnd"
+                }
+            ]
+        }
+    ]
+}

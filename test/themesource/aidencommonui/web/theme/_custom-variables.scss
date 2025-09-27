@@ -1,0 +1,37 @@
+
+
+//**************************************************************************************
+//
+// Configuration variables
+//
+//**************************************************************************************
+
+// Datagrid 2 
+$datagrid2-spacing: $spacing-smaller !default;
+$datagrid2-inactive-inline-rowbutton-color: transparent !default;
+
+// Dashboard tiles
+$dashboard-tile-width: 200px !default;
+$dashboard-tile-height: 160px !default;
+$dashboard-tile-padding-top: 20px !default;
+$dashboard-tile-padding-bottom: 4px !default;
+$dashboard-tile-margin-right: $spacing-medium !default;
+$dashboard-tile-margin-bottom: $spacing-medium !default;
+$dashboard-tile-border-width: 3px !default;
+$dashboard-tile-border-color: $border-color-default !default;
+$dashboard-tile-border-radius: 10px !default;
+$dashboard-tile-background-color: $bg-color-secondary !default;
+$dashboard-tile-hover-color: #d7e1f5 !default; // $btn-default-bg-hover is too dark in Aiden style but probably fine in other styles.
+$dashboard-tile-button-font-size: 65px !default;
+$dashboard-tile-badge-font-size: 65px !default;
+$dashboard-tile-caption-font-size: 15px !default;
+
+
+//**************************************************************************************
+//
+// Exclusion variables similar to how Atlas manages this
+//
+//**************************************************************************************
+
+$exclude-overrule-dataview-controls-spacing: false !default;
+$exclude-overrule-datagrid2-spacing: false !default;

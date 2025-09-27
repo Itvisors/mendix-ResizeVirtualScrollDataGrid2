@@ -1,0 +1,45 @@
+@import "_custom-variables.scss";
+
+div.dashboard-tile-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    div.dashboard-tile {
+        height: $dashboard-tile-height;
+        width: $dashboard-tile-width;
+        background-color: $dashboard-tile-background-color;
+        border: $dashboard-tile-border-width solid $dashboard-tile-border-color;
+        border-radius: $dashboard-tile-border-radius;
+        padding-top: $dashboard-tile-padding-top;
+        padding-bottom: $dashboard-tile-padding-bottom;
+        margin-right: $dashboard-tile-margin-right;
+        margin-bottom: $dashboard-tile-margin-bottom;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .dashboard-tile-button {
+            border: none;
+            padding: 0px;
+            background-color: transparent;
+            font-size: $dashboard-tile-button-font-size;
+        }
+
+        .dashboard-tile-badge {
+            // font-size: $font-size-h;
+            font-size: $dashboard-tile-badge-font-size;
+            font-weight: bold;
+        }
+
+        .dashboard-tile-caption {
+            font-size: $dashboard-tile-caption-font-size;
+        }
+    }
+
+    div.dashboard-tile:hover {
+        background-color: $dashboard-tile-hover-color;
+    }
+
+}
