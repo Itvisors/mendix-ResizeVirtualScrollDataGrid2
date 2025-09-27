@@ -5,12 +5,11 @@
         xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Resize Virtual Scroll Data Grid</name>
     <description>Resize Virtual Scroll DataGrid2</description>
-    <icon/>
     <properties>
         <propertyGroup caption="General">
-            <property key="sampleText" type="string" required="false">
-                <caption>Default value</caption>
-                <description>Sample text input</description>
+            <property key="content" type="widgets">
+                <caption>Content</caption>
+                <description></description>
             </property>
         </propertyGroup>
     </properties>

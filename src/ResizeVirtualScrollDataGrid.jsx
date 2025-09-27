@@ -1,8 +1,18 @@
-import { createElement } from "react";
+import { createElement, useEffect, useRef } from "react";
+import { useElementHeight } from "./hooks/useElementHeight";
 
-import { HelloWorldSample } from "./components/HelloWorldSample";
-import "./ui/ResizeVirtualScrollDataGrid.css";
+export function ResizeVirtualScrollDataGrid(props) {
+    const slotRef = useRef(null);
+    const elementHeight = useElementHeight(slotRef);
 
-export function ResizeVirtualScrollDataGrid({ sampleText }) {
-    return <HelloWorldSample sampleText={sampleText} />;
+    useEffect(() => {
+        console.info("GetContainerSizeWidget elementHeight: " + elementHeight);
+    }, [elementHeight]);
+
+    const className = props.name + " resizeVirtualScrollDataGrid";
+    return (
+        <div ref={slotRef} style={{ height: "100%" }} className={className}>
+            {props.content}
+        </div>
+    );
 }
