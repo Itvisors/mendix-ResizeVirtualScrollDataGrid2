@@ -4,7 +4,7 @@ Resize Virtual Scroll DataGrid2 to the available vertical space
 ## Features
 - Resize Virtual Scroll DataGrid2 to the available vertical space
 
-## Limitation
+## Limitations
 - Only works when used in parent with known height like the first and only container in a scroll container placeholder
 - Dataview and layout grid use a flex-grow: 1, which prevents the widget from detecting the available height properly
 - DataGrid 2 will only pick up the configured height the first time it is rendered, resizing the browser window has no effect
