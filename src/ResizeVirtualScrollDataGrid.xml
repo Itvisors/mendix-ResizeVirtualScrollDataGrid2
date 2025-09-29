@@ -11,6 +11,10 @@
                 <caption>Content</caption>
                 <description></description>
             </property>
+            <property key="headerHeight" type="integer" defaultValue="0">
+            	<caption>Header height</caption>
+            	<description>Height of the DG2 header, will be subtracted from the detected height.</description>
+            </property>
         </propertyGroup>
     </properties>
 </widget>
