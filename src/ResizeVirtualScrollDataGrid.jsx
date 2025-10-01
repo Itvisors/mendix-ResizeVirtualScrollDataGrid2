@@ -10,7 +10,8 @@ export function ResizeVirtualScrollDataGrid(props) {
     // Only render the content (the grid) when the height is no longer zero as DG2 only accepts the container height on first render
     const className = props.name + " resizeVirtualScrollDataGrid";
     const gridHeight = elementHeight - props.headerHeight;
-    const dataGridStyle = "div." + props.name + " { div.widget-datagrid-grid { max-height: " + gridHeight + "px }}";
+    const dataGridStyle =
+        "div." + props.name + " { div.widget-datagrid-grid-body { max-height: " + gridHeight + "px }}";
     return (
         <div ref={slotRef} style={{ height: "100%" }} className={className}>
             <style>{dataGridStyle}</style>
