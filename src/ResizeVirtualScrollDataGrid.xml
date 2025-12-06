@@ -11,9 +11,17 @@
                 <caption>Content</caption>
                 <description></description>
             </property>
+            <property key="widgetType" type="enumeration" defaultValue="datagrid2">
+                <caption>Widget type</caption>
+                <description></description>
+                <enumerationValues>
+                    <enumerationValue key="datagrid2">DataGrid2</enumerationValue>
+                    <enumerationValue key="gallery">Gallery</enumerationValue>
+                </enumerationValues>
+            </property>
             <property key="headerHeight" type="integer" defaultValue="69">
             	<caption>Header height</caption>
-            	<description>Height of the DG2 header, will be subtracted from the detected height.</description>
+            	<description>Height of the header, will be subtracted from the detected height.</description>
             </property>
         </propertyGroup>
     </properties>
