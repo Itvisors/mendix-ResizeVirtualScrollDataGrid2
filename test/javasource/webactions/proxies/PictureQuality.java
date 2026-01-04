@@ -6,11 +6,11 @@ package webactions.proxies;
 
 public enum PictureQuality
 {
-	original("4523f10a-ea35-4400-9023-a89811b5cc65"),
-	low("6db6c240-d738-4f24-b939-435ec3c49054"),
-	medium("7cb4f68f-9e2c-45cb-99bc-cef75bf967af"),
-	high("f8e5e6fc-3083-4898-9d2c-ba755e39cf62"),
-	custom("5e87e0dd-4766-4d3f-bc11-5bdf0778c49e");
+	original("48d05c0d-2740-44db-a89a-d3376282d4a3"),
+	low("96dec956-a488-4885-aeba-d6d31cea08cb"),
+	medium("b4bff4a2-0e78-4834-80cb-a96da9c39182"),
+	high("09e128f6-7ee9-4dcf-b9c2-520f6b8b7140"),
+	custom("fe656d15-8bd1-40bf-aa26-393ac00a63a6");
 
 	private final java.lang.String i18nCaptionKey;
 	

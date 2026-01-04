@@ -6,8 +6,8 @@ package aiden_interfaces.proxies;
 
 public enum ENUM_MetricSyncType
 {
-	Full("6a521898-ecd9-4312-9341-bb160102a421"),
-	Delta("1739aaa2-206c-4632-bf50-da7d891b18e6");
+	Full("66817e58-3e4e-4ee6-a004-159f26ab2af7"),
+	Delta("b3d75075-9916-425b-bb67-a07dc159697f");
 
 	private final java.lang.String i18nCaptionKey;
 	

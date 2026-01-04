@@ -6,10 +6,10 @@ package aiden_interfaces.proxies;
 
 public enum ENUM_Authentication_Service
 {
-	Use_Host_Setting("af5896a9-6aa2-43fc-8e16-ec05ad9d4937"),
-	Username_Password("16eacaf5-832b-471f-884a-a957fa98128b"),
-	Subscription_Key("4d346a2b-d1a2-4956-bcf4-a187ab018927"),
-	Open("4c0164fa-906d-4715-a138-0d32bdbc649c");
+	Use_Host_Setting("81f6df5d-f97c-4029-8978-b4d594e265b8"),
+	Username_Password("7c5d0d1e-eebb-41fa-a172-5b91bd6afff6"),
+	Subscription_Key("0efdc003-772a-4a42-afa4-2e39cea7685c"),
+	Open("b2b4b616-bfe7-44a6-a4e5-f251e52b8e91");
 
 	private final java.lang.String i18nCaptionKey;
 	

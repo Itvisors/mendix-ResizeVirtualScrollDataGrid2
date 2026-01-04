@@ -55,6 +55,45 @@ public final class Microflows
 	{
 		aCT_GenerateEnvironmentsBuilder().execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Host_SaveNewAzureMetricsBuilder(
+		java.lang.String _tenantID,
+		java.lang.String _clientID,
+		java.lang.String _secret,
+		java.lang.String _dataCollectionEndpointURL,
+		java.lang.String _dataCollectionRuleID,
+		java.lang.String _stream
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Aiden_Interfaces.ACT_Host_SaveNewAzureMetrics");
+		builder = builder.withParam("TenantID", _tenantID);
+		builder = builder.withParam("ClientID", _clientID);
+		builder = builder.withParam("Secret", _secret);
+		builder = builder.withParam("DataCollectionEndpointURL", _dataCollectionEndpointURL);
+		builder = builder.withParam("DataCollectionRuleID", _dataCollectionRuleID);
+		builder = builder.withParam("Stream", _stream);
+		return builder;
+	}
+
+	public static void aCT_Host_SaveNewAzureMetrics(
+		IContext context,
+		java.lang.String _tenantID,
+		java.lang.String _clientID,
+		java.lang.String _secret,
+		java.lang.String _dataCollectionEndpointURL,
+		java.lang.String _dataCollectionRuleID,
+		java.lang.String _stream
+	)
+	{
+		aCT_Host_SaveNewAzureMetricsBuilder(
+				_tenantID,
+				_clientID,
+				_secret,
+				_dataCollectionEndpointURL,
+				_dataCollectionRuleID,
+				_stream
+			)
+			.execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_ProcessImportBuilder(
 		aiden_interfaces.proxies.ImportExport _importExport
 	)
@@ -371,6 +410,17 @@ public final class Microflows
 		Object result = dS_RetrieveMappingRecordBuilder().execute(context);
 		return result == null ? null : aiden_interfaces.proxies.Mapping.initialize(context, (IMendixObject) result);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder mANN_ImportExport_DeleteAllBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Aiden_Interfaces.MANN_ImportExport_DeleteAll");
+		return builder;
+	}
+
+	public static java.lang.String mANN_ImportExport_DeleteAll(IContext context)
+	{
+		Object result = mANN_ImportExport_DeleteAllBuilder().execute(context);
+		return (java.lang.String) result;
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder mANN_Token_CleanupBuilder()
 	{
 		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Aiden_Interfaces.MANN_Token_Cleanup");
@@ -572,16 +622,29 @@ public final class Microflows
 			)
 			.execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sUB_AzureMetric_GetQueryHelperBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Aiden_Interfaces.SUB_AzureMetric_GetQueryHelper");
+		return builder;
+	}
+
+	public static aiden_interfaces.proxies.QueryHelper sUB_AzureMetric_GetQueryHelper(IContext context)
+	{
+		Object result = sUB_AzureMetric_GetQueryHelperBuilder().execute(context);
+		return result == null ? null : aiden_interfaces.proxies.QueryHelper.initialize(context, (IMendixObject) result);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sUB_AzureMetric_PostRequestBuilder(
 		java.util.List<aiden_interfaces.proxies.AzureMetric> _azureMetricList,
 		java.util.List<aiden_interfaces.proxies.AzureMetricProperty> _azureMetricPropertyList,
-		aiden_interfaces.proxies.CommonMetricData _commonMetricData
+		aiden_interfaces.proxies.CommonMetricData _commonMetricData,
+		aiden_interfaces.proxies.QueryHelper _queryHelperAzureMetrics
 	)
 	{
 		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Aiden_Interfaces.SUB_AzureMetric_PostRequest");
 		builder = builder.withParam("AzureMetricList", _azureMetricList);
 		builder = builder.withParam("AzureMetricPropertyList", _azureMetricPropertyList);
 		builder = builder.withParam("CommonMetricData", _commonMetricData);
+		builder = builder.withParam("QueryHelperAzureMetrics", _queryHelperAzureMetrics);
 		return builder;
 	}
 
@@ -589,32 +652,38 @@ public final class Microflows
 		IContext context,
 		java.util.List<aiden_interfaces.proxies.AzureMetric> _azureMetricList,
 		java.util.List<aiden_interfaces.proxies.AzureMetricProperty> _azureMetricPropertyList,
-		aiden_interfaces.proxies.CommonMetricData _commonMetricData
+		aiden_interfaces.proxies.CommonMetricData _commonMetricData,
+		aiden_interfaces.proxies.QueryHelper _queryHelperAzureMetrics
 	)
 	{
 		sUB_AzureMetric_PostRequestBuilder(
 				_azureMetricList,
 				_azureMetricPropertyList,
-				_commonMetricData
+				_commonMetricData,
+				_queryHelperAzureMetrics
 			)
 			.execute(context);
 	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sUB_AzureMetric_PostRequestBasicBuilder(
-		aiden_interfaces.proxies.CommonMetricData _commonMetricData
+		aiden_interfaces.proxies.CommonMetricData _commonMetricData,
+		aiden_interfaces.proxies.QueryHelper _queryHelperAzureMetrics
 	)
 	{
 		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Aiden_Interfaces.SUB_AzureMetric_PostRequestBasic");
 		builder = builder.withParam("CommonMetricData", _commonMetricData);
+		builder = builder.withParam("QueryHelperAzureMetrics", _queryHelperAzureMetrics);
 		return builder;
 	}
 
 	public static void sUB_AzureMetric_PostRequestBasic(
 		IContext context,
-		aiden_interfaces.proxies.CommonMetricData _commonMetricData
+		aiden_interfaces.proxies.CommonMetricData _commonMetricData,
+		aiden_interfaces.proxies.QueryHelper _queryHelperAzureMetrics
 	)
 	{
 		sUB_AzureMetric_PostRequestBasicBuilder(
-				_commonMetricData
+				_commonMetricData,
+				_queryHelperAzureMetrics
 			)
 			.execute(context);
 	}
@@ -627,6 +696,33 @@ public final class Microflows
 	public static void sUB_CleanupSettings(IContext context)
 	{
 		sUB_CleanupSettingsBuilder().execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sUB_CreateHeaderBuilder(
+		java.util.List<system.proxies.HttpHeader> _httpHeaderList,
+		java.lang.String _key,
+		java.lang.String _value
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Aiden_Interfaces.SUB_CreateHeader");
+		builder = builder.withParam("HttpHeaderList", _httpHeaderList);
+		builder = builder.withParam("Key", _key);
+		builder = builder.withParam("Value", _value);
+		return builder;
+	}
+
+	public static void sUB_CreateHeader(
+		IContext context,
+		java.util.List<system.proxies.HttpHeader> _httpHeaderList,
+		java.lang.String _key,
+		java.lang.String _value
+	)
+	{
+		sUB_CreateHeaderBuilder(
+				_httpHeaderList,
+				_key,
+				_value
+			)
+			.execute(context);
 	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sUB_EncryptValuesOnHostBuilder(
 		aiden_interfaces.proxies.Host _hosts
@@ -723,13 +819,15 @@ public final class Microflows
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sUB_Token_GetOrCreateBuilder(
 		aiden_interfaces.proxies.Host _host,
 		aiden_interfaces.proxies.QueryHelper _queryHelper,
-		boolean _logErrorIfNotConfigured
+		boolean _logErrorIfNotConfigured,
+		aiden_interfaces.proxies.Service _service
 	)
 	{
 		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Aiden_Interfaces.SUB_Token_GetOrCreate");
 		builder = builder.withParam("Host", _host);
 		builder = builder.withParam("QueryHelper", _queryHelper);
 		builder = builder.withParam("LogErrorIfNotConfigured", _logErrorIfNotConfigured);
+		builder = builder.withParam("Service", _service);
 		return builder;
 	}
 
@@ -737,13 +835,15 @@ public final class Microflows
 		IContext context,
 		aiden_interfaces.proxies.Host _host,
 		aiden_interfaces.proxies.QueryHelper _queryHelper,
-		boolean _logErrorIfNotConfigured
+		boolean _logErrorIfNotConfigured,
+		aiden_interfaces.proxies.Service _service
 	)
 	{
 		Object result = sUB_Token_GetOrCreateBuilder(
 				_host,
 				_queryHelper,
-				_logErrorIfNotConfigured
+				_logErrorIfNotConfigured,
+				_service
 			)
 			.execute(context);
 		return result == null ? null : aiden_interfaces.proxies.Token.initialize(context, (IMendixObject) result);
@@ -786,13 +886,15 @@ public final class Microflows
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sUB_Token_RequestNewBuilder(
 		aiden_interfaces.proxies.Host _host,
 		boolean _logErrorIfNotConfigured,
-		aiden_interfaces.proxies.QueryHelper _queryHelper
+		aiden_interfaces.proxies.QueryHelper _queryHelper,
+		aiden_interfaces.proxies.Service _service
 	)
 	{
 		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Aiden_Interfaces.SUB_Token_RequestNew");
 		builder = builder.withParam("Host", _host);
 		builder = builder.withParam("LogErrorIfNotConfigured", _logErrorIfNotConfigured);
 		builder = builder.withParam("QueryHelper", _queryHelper);
+		builder = builder.withParam("Service", _service);
 		return builder;
 	}
 
@@ -800,13 +902,15 @@ public final class Microflows
 		IContext context,
 		aiden_interfaces.proxies.Host _host,
 		boolean _logErrorIfNotConfigured,
-		aiden_interfaces.proxies.QueryHelper _queryHelper
+		aiden_interfaces.proxies.QueryHelper _queryHelper,
+		aiden_interfaces.proxies.Service _service
 	)
 	{
 		Object result = sUB_Token_RequestNewBuilder(
 				_host,
 				_logErrorIfNotConfigured,
-				_queryHelper
+				_queryHelper,
+				_service
 			)
 			.execute(context);
 		return result == null ? null : aiden_interfaces.proxies.Token.initialize(context, (IMendixObject) result);

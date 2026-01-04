@@ -6,8 +6,9 @@ public class UserActionsRegistrar
 {
   public void registerActions(IActionRegistrator registrator)
   {
-    registrator.registerUserAction(aiden_interfaces.actions.CreateAzureLogAnalyticsSignature.class);
-    registrator.registerUserAction(aiden_interfaces.actions.GetContentLength.class);
+    registrator.registerUserAction(aiden_interfaces.actions.CallWebService.class);
+    registrator.registerUserAction(aiden_interfaces.actions.SplitJsonArray.class);
+    registrator.registerUserAction(aiden_interfaces.actions.SplitWebServiceListResponse.class);
     registrator.registerUserAction(communitycommons.actions.Base64Decode.class);
     registrator.registerUserAction(communitycommons.actions.Base64DecodeToFile.class);
     registrator.registerUserAction(communitycommons.actions.Base64Encode.class);

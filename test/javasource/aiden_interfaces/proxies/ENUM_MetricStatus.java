@@ -6,8 +6,8 @@ package aiden_interfaces.proxies;
 
 public enum ENUM_MetricStatus
 {
-	Success("3f6c7d0f-44ba-4e83-b078-5483aadfa4e3"),
-	Error("669de312-3c12-4d17-be65-54bf0027493c");
+	Success("521665c2-24dc-4f7a-94c0-e6017ba4c9df"),
+	Error("17e737bc-01f9-4c39-b5a6-f6275054a3f5");
 
 	private final java.lang.String i18nCaptionKey;
 	

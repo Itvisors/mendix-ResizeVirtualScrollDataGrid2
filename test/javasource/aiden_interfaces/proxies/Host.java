@@ -34,6 +34,7 @@ public class Host implements com.mendix.systemwideinterfaces.core.IEntityProxy
 		OAuthUrl("OAuthUrl"),
 		OAuthClientID("OAuthClientID"),
 		OAuthClientSecret("OAuthClientSecret"),
+		OAuthScope("OAuthScope"),
 		Host_Environment("Aiden_Interfaces.Host_Environment");
 
 		private final java.lang.String metaName;
@@ -615,6 +616,42 @@ public class Host implements com.mendix.systemwideinterfaces.core.IEntityProxy
 	public final void setOAuthClientSecret(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String oauthclientsecret)
 	{
 		getMendixObject().setValue(context, MemberNames.OAuthClientSecret.toString(), oauthclientsecret);
+	}
+
+	/**
+	 * @return value of OAuthScope
+	 */
+	public final java.lang.String getOAuthScope()
+	{
+		return getOAuthScope(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of OAuthScope
+	 */
+	public final java.lang.String getOAuthScope(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.OAuthScope.toString());
+	}
+
+	/**
+	 * Set value of OAuthScope
+	 * @param oauthscope
+	 */
+	public final void setOAuthScope(java.lang.String oauthscope)
+	{
+		setOAuthScope(getContext(), oauthscope);
+	}
+
+	/**
+	 * Set value of OAuthScope
+	 * @param context
+	 * @param oauthscope
+	 */
+	public final void setOAuthScope(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String oauthscope)
+	{
+		getMendixObject().setValue(context, MemberNames.OAuthScope.toString(), oauthscope);
 	}
 
 	/**

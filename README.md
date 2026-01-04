@@ -10,6 +10,7 @@ Resize Virtual Scroll DataGrid2 and Gallery to the available vertical space
 - Dataview and layout grid use a flex-grow: 1, which prevents the widget from detecting the available height properly
 - DataGrid 2 and Gallery will only pick up the configured height the first time it is rendered, resizing the browser window has no effect
 - The header height must be fixed property value as it must be known before the first render of the grid
+- This widget relies on Atlas Core styling that is only available when the React client is enabled
 
 ## Usage
 - Use a layout like the Atlas core layouts or similar that do not wrap the placeholder in any way

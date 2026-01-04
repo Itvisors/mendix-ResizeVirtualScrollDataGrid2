@@ -35,6 +35,7 @@ public class QueryHelper implements com.mendix.systemwideinterfaces.core.IEntity
 		JSON("JSON"),
 		SelectUsed("SelectUsed"),
 		Environment("Environment"),
+		OAuthAccessToken("OAuthAccessToken"),
 		QueryHelper_Environment("Aiden_Interfaces.QueryHelper_Environment"),
 		QueryHelper_Host("Aiden_Interfaces.QueryHelper_Host"),
 		QueryHelper_Service("Aiden_Interfaces.QueryHelper_Service"),
@@ -637,6 +638,42 @@ public class QueryHelper implements com.mendix.systemwideinterfaces.core.IEntity
 		} else {
 			getMendixObject().setValue(context, MemberNames.Environment.toString(), null);
 		}
+	}
+
+	/**
+	 * @return value of OAuthAccessToken
+	 */
+	public final java.lang.String getOAuthAccessToken()
+	{
+		return getOAuthAccessToken(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of OAuthAccessToken
+	 */
+	public final java.lang.String getOAuthAccessToken(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.OAuthAccessToken.toString());
+	}
+
+	/**
+	 * Set value of OAuthAccessToken
+	 * @param oauthaccesstoken
+	 */
+	public final void setOAuthAccessToken(java.lang.String oauthaccesstoken)
+	{
+		setOAuthAccessToken(getContext(), oauthaccesstoken);
+	}
+
+	/**
+	 * Set value of OAuthAccessToken
+	 * @param context
+	 * @param oauthaccesstoken
+	 */
+	public final void setOAuthAccessToken(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String oauthaccesstoken)
+	{
+		getMendixObject().setValue(context, MemberNames.OAuthAccessToken.toString(), oauthaccesstoken);
 	}
 
 	/**

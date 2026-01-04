@@ -6,13 +6,13 @@ package aiden_interfaces.proxies;
 
 public enum ENUM_HTTPMethod
 {
-	POST("4e7cd98d-42ed-40b7-83da-52a712b8594a"),
-	PATCH("f4a63506-ca66-402d-9afe-f1da034f3891"),
-	GET("f0cf77e7-2e64-414b-a423-75d073d35ce6"),
-	HEAD("542287d6-6b49-48be-ab41-e658287652b8"),
-	OPTIONS("f21ab61c-e47a-4f3d-9f62-fe8782000285"),
-	PUT("1d6376da-dc3c-4528-bf95-1117e8eac555"),
-	DELETE("5616ede4-07db-4c85-ac2c-14df8524995d");
+	POST("6347593d-649d-4c28-abec-2613b3f6ed20"),
+	PATCH("cfa45940-379b-49f0-9c36-c3717fea2d4b"),
+	GET("b5e7edb7-2e9c-49ba-bb4c-668469e25025"),
+	HEAD("339030bc-4a18-42e7-a122-d7b980cb90f4"),
+	OPTIONS("c10c35ac-e9e2-48f1-b696-d0b751dd11f9"),
+	PUT("78b2882d-4814-4a9f-a0d5-256e786329b7"),
+	DELETE("86a70b36-e792-4676-b674-ba301a72b622");
 
 	private final java.lang.String i18nCaptionKey;
 	

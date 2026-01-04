@@ -125,6 +125,12 @@
             "type": "Toggle",
             "description": "Hide the selection count below the gallery when selection is enabled",
             "class": "hide-gallery-selection-count"
+        },
+        {
+            "name": "Hide footer (Aiden)",
+            "type": "Toggle",
+            "description": "Hide the gallery footer",
+            "class": "hide-gallery-footer"
         }
     ],
     "ListView": [

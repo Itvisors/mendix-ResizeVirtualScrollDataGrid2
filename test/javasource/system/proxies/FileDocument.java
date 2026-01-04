@@ -84,9 +84,6 @@ public class FileDocument implements com.mendix.systemwideinterfaces.core.IEntit
 		if (mendixObject.isInstanceOf("System.SynchronizationErrorFile")) {
 			return system.proxies.SynchronizationErrorFile.initialize(context, mendixObject);
 		}
-		if (mendixObject.isInstanceOf("FileUploader.UploadedFile")) {
-			return fileuploader.proxies.UploadedFile.initialize(context, mendixObject);
-		}
 		return new system.proxies.FileDocument(context, mendixObject);
 	}
 

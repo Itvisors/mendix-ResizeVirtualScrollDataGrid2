@@ -15,38 +15,19 @@ public final class Constants
 
 	// These are the constants for the Aiden_Interfaces module
 
-	/**
-	* The part to include in the URL after the workspace ID
-	*/
-	public static java.lang.String getAZURE_LOG_ANALYTICS_ENDPOINT()
+	public static java.lang.String getAZURE_LOG_SERVICE_KEY()
 	{
-		return (java.lang.String)Core.getConfiguration().getConstantValue("Aiden_Interfaces.AZURE_LOG_ANALYTICS_ENDPOINT");
-	}
-
-	/**
-	* Primary key of the Azure Log Analytics Workspace
-	*/
-	public static java.lang.String getAZURE_LOG_ANALYTICS_WORKSPACE_PRIMARYKEY()
-	{
-		return (java.lang.String)Core.getConfiguration().getConstantValue("Aiden_Interfaces.AZURE_LOG_ANALYTICS_WORKSPACE_PRIMARYKEY");
-	}
-
-	public static java.lang.String getAZURE_LOGTABLE()
-	{
-		return (java.lang.String)Core.getConfiguration().getConstantValue("Aiden_Interfaces.AZURE_LOGTABLE");
-	}
-
-	/**
-	* ID of the workspace that is linked to Azure Application Insights
-	*/
-	public static java.lang.String getAZURE_WORKSPACE_ID()
-	{
-		return (java.lang.String)Core.getConfiguration().getConstantValue("Aiden_Interfaces.AZURE_WORKSPACE_ID");
+		return (java.lang.String)Core.getConfiguration().getConstantValue("Aiden_Interfaces.AZURE_LOG_SERVICE_KEY");
 	}
 
 	public static java.lang.String getLOGNODE()
 	{
 		return (java.lang.String)Core.getConfiguration().getConstantValue("Aiden_Interfaces.LOGNODE");
+	}
+
+	public static java.lang.String getLOGNODE_CUSTOM_WEB_SERVICE()
+	{
+		return (java.lang.String)Core.getConfiguration().getConstantValue("Aiden_Interfaces.LOGNODE_CUSTOM_WEB_SERVICE");
 	}
 
 	public static java.lang.String getLOGNODE_OAUTH_TOKEN()

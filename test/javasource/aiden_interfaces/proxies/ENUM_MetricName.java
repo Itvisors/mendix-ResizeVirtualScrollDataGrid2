@@ -6,9 +6,9 @@ package aiden_interfaces.proxies;
 
 public enum ENUM_MetricName
 {
-	dataFetchDurationMs("a2ff8e08-cd4f-4652-8699-56637fcdbc1c"),
-	recordsFetchedCount("27526e80-4cec-46b7-9c50-ba7f9c596fa6"),
-	lastDataFetch("fa8dc91e-3bed-4967-8587-b506913746d3");
+	dataFetchDurationMs("08f0ce76-0b0e-4787-83db-026f99fca369"),
+	recordsFetchedCount("565969b8-f543-489f-8313-de7d2cff8b09"),
+	lastDataFetch("5ab00f7a-52d8-402c-84ca-0b779f6a2e6b");
 
 	private final java.lang.String i18nCaptionKey;
 	

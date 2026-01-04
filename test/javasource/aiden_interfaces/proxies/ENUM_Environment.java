@@ -6,10 +6,10 @@ package aiden_interfaces.proxies;
 
 public enum ENUM_Environment
 {
-	Development("3d88cc19-613a-4aa7-9d7e-8f517851cd7e"),
-	Test("cfd30b4b-b995-4211-9c96-edf21ad6f69b"),
-	Acceptance("8f56ac28-a034-4202-b4bd-70bc160603b2"),
-	Production("97c3ddec-a5d6-4dc6-8d9b-b19c86ef272e");
+	Development("0d7100b0-4eac-4c85-a18a-80a5db488f6b"),
+	Test("60297680-755a-4adc-a61a-861e2fc8c58d"),
+	Acceptance("1b36b908-e3fd-4c0c-b3e3-ad8103f8a589"),
+	Production("ad301d62-2e3e-451d-8964-ef228f6c4fff");
 
 	private final java.lang.String i18nCaptionKey;
 	

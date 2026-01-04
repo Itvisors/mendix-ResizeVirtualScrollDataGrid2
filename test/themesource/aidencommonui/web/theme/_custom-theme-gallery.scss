@@ -10,3 +10,9 @@
         }
     }
 }
+
+.widget-gallery.hide-gallery-footer  {
+    .widget-gallery-footer {
+        display: none;
+    }
+}

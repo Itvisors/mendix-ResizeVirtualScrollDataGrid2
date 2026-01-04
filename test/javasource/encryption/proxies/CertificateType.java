@@ -6,8 +6,8 @@ package encryption.proxies;
 
 public enum CertificateType
 {
-	PublicKey("07b7812b-c7e4-4e58-8c00-75a89d74be84"),
-	PrivateKey("bf984eaf-42e2-418d-9b87-95dca1f12213");
+	PublicKey("7b46b959-e3fb-4503-928c-764d13088de5"),
+	PrivateKey("07c34332-907e-475e-b145-15022467aab3");
 
 	private final java.lang.String i18nCaptionKey;
 	

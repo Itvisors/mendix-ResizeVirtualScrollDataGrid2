@@ -64,9 +64,6 @@ public class Image extends system.proxies.FileDocument
 	 */
 	public static system.proxies.Image initialize(com.mendix.systemwideinterfaces.core.IContext context, com.mendix.systemwideinterfaces.core.IMendixObject mendixObject)
 	{
-		if (mendixObject.isInstanceOf("FileUploader.UploadedImage")) {
-			return fileuploader.proxies.UploadedImage.initialize(context, mendixObject);
-		}
 		return new system.proxies.Image(context, mendixObject);
 	}
 
@@ -76,7 +73,7 @@ public class Image extends system.proxies.FileDocument
 		return system.proxies.Image.initialize(context, mendixObject);
 	}
 
-	public static java.util.List<? extends system.proxies.Image> load(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String xpathConstraint) throws com.mendix.core.CoreException
+	public static java.util.List<system.proxies.Image> load(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String xpathConstraint) throws com.mendix.core.CoreException
 	{
 		return com.mendix.core.Core.createXPathQuery(String.format("//%1$s%2$s", entityName, xpathConstraint))
 			.execute(context)
