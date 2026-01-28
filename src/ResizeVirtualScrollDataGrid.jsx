@@ -6,10 +6,8 @@ export function ResizeVirtualScrollDataGrid(props) {
     const elementHeight = useElementHeight(slotRef);
 
     // Set the height on a custom style that targets the data grid 2 or gallery in the widget contents
-    // The first render the element height will be zero
-    // Only render the content (the grid) when the height is no longer zero as DG2 and Gallery only accept the container height on first render
     const className = props.name + " resizeVirtualScrollDataGrid";
-    const gridHeight = elementHeight - props.headerHeight;
+    const gridHeight = elementHeight - props.headerHeight - props.footerHeight;
     let dataGridStyle = null;
     switch (props.widgetType) {
         case "datagrid2":

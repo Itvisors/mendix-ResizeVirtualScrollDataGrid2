@@ -12,31 +12,8 @@ export function useElementHeight(ref) {
         const el = ref.current;
         if (!el) return;
 
-        // Initiele meting
-        console.info("useElementHeight - initial: " + el.clientHeight);
+        // console.info("useElementHeight - initial: " + el.clientHeight);
         setHeight(el.clientHeight);
-
-        // // ResizeObserver: update bij parent/slot resizes en font/layout changes
-        // const ro = new ResizeObserver(entries => {
-        //     // gebruik forEach om 'void' intent duidelijk te maken voor ESLint
-        //     entries.forEach(entry => {
-        //         console.info("useElementHeight - ResizeObserver: " + entry.contentRect.height);
-        //         setHeight(Math.round(entry.contentRect.height));
-        //     });
-        // });
-        // ro.observe(el);
-
-        // const onWinResize = () => {
-        //     console.info("useElementHeight - onWinResize: " + el.clientHeight);
-        //     setHeight(el.clientHeight);
-        // };
-        // window.addEventListener("resize", onWinResize);
-
-        // // eslint-disable-next-line consistent-return
-        // return () => {
-        //     ro.disconnect();
-        //     window.removeEventListener("resize", onWinResize);
-        // };
     }, [ref]);
 
     return height;

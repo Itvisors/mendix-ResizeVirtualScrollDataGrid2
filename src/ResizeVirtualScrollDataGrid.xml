@@ -23,6 +23,10 @@
             	<caption>Header height</caption>
             	<description>Height of the header, will be subtracted from the detected height.</description>
             </property>
+            <property key="footerHeight" type="integer" defaultValue="0">
+            	<caption>Footer height</caption>
+            	<description>Height of the footer, will be subtracted from the detected height.</description>
+            </property>
         </propertyGroup>
     </properties>
 </widget>

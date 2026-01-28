@@ -17,6 +17,7 @@ Resize Virtual Scroll DataGrid2 and Gallery to the available vertical space
 - A container with class card may be used as single main element on the placeholder
 - Place the widget in the placeholder or card container
 - Set the height of the header content on the widget
+- Set the height of the footer content on the widget, zero if no footer or row count is used
 - With Atlas core styling, the Data Grid 2header itself is 69 and buttons wrapped in a controlgroup container 46
 - Set the widget type correctly
 - Place a DataGrid2 or Gallery in the widget container
