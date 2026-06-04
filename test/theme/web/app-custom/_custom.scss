@@ -20,3 +20,11 @@ div.resizeVirtualScrollDataGrid div.widget-gallery div.widget-gallery-content {
 div.resizeVirtualScrollDataGrid div.pagination-bar {
     margin-bottom: 0px;
 }
+
+// Custom variable and CSS property for ResizeVirtualDataGrid
+$resize-virtualscroll-datagrid-header-margin-correction: 56;
+// CSS custom property (runtime, accessible from JavaScript!)
+:root {
+  --resize-virtualscroll-datagrid-header-margin-correction: #{$resize-virtualscroll-datagrid-header-margin-correction};
+}
+

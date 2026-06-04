@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0",
+  "widgets": [
+    {
+      "sha-256": "ce1370db45d5a8413e5c576cb697366d5f949993fc98bf4554943c06ea3b5817",
+      "name": "JsonViewLite",
+      "version": "1.1.1",
+      "appStoreVersionGuid": "1f7b51ab-9ce9-4ebb-ba49-93c677024a83"
+    },
+    {
+      "sha-256": "fb8eccf7a153da32b35ebd20d2a366f3d637ab854e6ab16dceb61309da5e17bd",
+      "name": "Image",
+      "version": "1.5.1",
+      "appStoreVersionGuid": "2ff41b6e-8f18-4c99-97fc-13e8d25738e4"
+    },
+    {
+      "sha-256": "e264833f829a567ff9a6bcbfaeceefef11b57ff095872c546780da373b3f6d9a",
+      "name": "Combobox",
+      "version": "2.7.0",
+      "appStoreVersionGuid": "c451a722-8cba-4a80-856d-c6bbfe2b3731"
+    },
+    {
+      "sha-256": "6293468eea6c842ba3d8a98c6048eae2ae7de586358b74774270fbe400c673ac",
+      "name": "Combo box",
+      "version": "2.8.1",
+      "appStoreVersionGuid": "147c8275-7a43-4ded-969d-b6196d09c0bc"
+    }
+  ]
+}
