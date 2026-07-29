@@ -6,9 +6,9 @@ package aiden_interfaces.proxies;
 
 public enum ENUM_ServiceType
 {
-	Rest("69ff6bc5-209b-4b78-a5ac-664e44a44e76"),
-	Soap("faa50ffb-97d2-42f4-af04-3728ae85c948"),
-	OData("de4e146f-3646-41ea-8745-f2345b2fe545");
+	Rest("a639d045-61e3-48ca-a1ed-d0e76adf3990"),
+	Soap("2bca5a11-cb4f-4fb3-81a2-055e5f01c474"),
+	OData("942c2e93-c575-4c20-b94c-26328613fc8c");
 
 	private final java.lang.String i18nCaptionKey;
 	

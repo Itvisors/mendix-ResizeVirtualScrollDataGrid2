@@ -6,9 +6,9 @@ package aiden_interfaces.proxies;
 
 public enum ENUM_Result
 {
-	Ok("d7888ab9-bd85-402d-91c3-8bb86187dddd"),
-	Error("ec98c4ef-4be3-46b1-b659-0f7058ff0e8f"),
-	Warning("ee19e873-b4cb-4f4a-bc6c-0d9a6b52e63a");
+	Ok("c1c596f3-9593-4170-84be-9c7bd5307304"),
+	Error("e2896eb4-adb8-416f-93f0-6c593340c150"),
+	Warning("3b581e92-08fd-4122-b300-5be3784a5d22");
 
 	private final java.lang.String i18nCaptionKey;
 	

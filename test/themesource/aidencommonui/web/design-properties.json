@@ -35,6 +35,7 @@
         },
         {
             "name": "Maximum width (Aiden)",
+            "oldNames": ["Maximum width (ITV)"],
             "type": "Dropdown",
             "description": "Set a maximum width for small content",
             "options": [
@@ -69,6 +70,7 @@
     "DynamicText": [
         {
             "name": "Control label (Aiden)",
+            "oldNames": ["Control label (ITV)"],
             "type": "Toggle",
             "description": "Make the text appear as control label",
             "class": "custom-control-label"
@@ -82,7 +84,7 @@
             "options": [
                 {
                     "name": "Transparent",
-                    "class": "no-background"
+                    "class": "btn-no-background"
                 }
             ]
         },

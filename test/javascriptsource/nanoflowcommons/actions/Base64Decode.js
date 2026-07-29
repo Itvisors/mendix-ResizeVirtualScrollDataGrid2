@@ -6,7 +6,6 @@
 // - the code between BEGIN EXTRA CODE and END EXTRA CODE
 // Other code you write will be lost the next time you deploy the project.
 import { Big } from "big.js";
-import { Base64 } from 'js-base64';
 
 // BEGIN EXTRA CODE
 // END EXTRA CODE
@@ -17,6 +16,6 @@ import { Base64 } from 'js-base64';
  */
 export async function Base64Decode(base64) {
 	// BEGIN USER CODE
-    return Base64.decode(base64);
+	throw new Error("JavaScript action was not implemented");
 	// END USER CODE
 }

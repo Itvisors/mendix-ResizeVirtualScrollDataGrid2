@@ -30,11 +30,12 @@ public class Host implements com.mendix.systemwideinterfaces.core.IEntityProxy
 		UserName("UserName"),
 		Password("Password"),
 		SubscriptionKey("SubscriptionKey"),
-		Usage("Usage"),
 		OAuthUrl("OAuthUrl"),
 		OAuthClientID("OAuthClientID"),
 		OAuthClientSecret("OAuthClientSecret"),
 		OAuthScope("OAuthScope"),
+		OAuthAutomaticTokenRequest("OAuthAutomaticTokenRequest"),
+		OAuthAutomaticTokenMargin("OAuthAutomaticTokenMargin"),
 		Host_Environment("Aiden_Interfaces.Host_Environment");
 
 		private final java.lang.String metaName;
@@ -475,42 +476,6 @@ public class Host implements com.mendix.systemwideinterfaces.core.IEntityProxy
 	}
 
 	/**
-	 * @return value of Usage
-	 */
-	public final java.lang.Integer getUsage()
-	{
-		return getUsage(getContext());
-	}
-
-	/**
-	 * @param context
-	 * @return value of Usage
-	 */
-	public final java.lang.Integer getUsage(com.mendix.systemwideinterfaces.core.IContext context)
-	{
-		return (java.lang.Integer) getMendixObject().getValue(context, MemberNames.Usage.toString());
-	}
-
-	/**
-	 * Set value of Usage
-	 * @param usage
-	 */
-	public final void setUsage(java.lang.Integer usage)
-	{
-		setUsage(getContext(), usage);
-	}
-
-	/**
-	 * Set value of Usage
-	 * @param context
-	 * @param usage
-	 */
-	public final void setUsage(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer usage)
-	{
-		getMendixObject().setValue(context, MemberNames.Usage.toString(), usage);
-	}
-
-	/**
 	 * @return value of OAuthUrl
 	 */
 	public final java.lang.String getOAuthUrl()
@@ -652,6 +617,78 @@ public class Host implements com.mendix.systemwideinterfaces.core.IEntityProxy
 	public final void setOAuthScope(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String oauthscope)
 	{
 		getMendixObject().setValue(context, MemberNames.OAuthScope.toString(), oauthscope);
+	}
+
+	/**
+	 * @return value of OAuthAutomaticTokenRequest
+	 */
+	public final java.lang.Boolean getOAuthAutomaticTokenRequest()
+	{
+		return getOAuthAutomaticTokenRequest(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of OAuthAutomaticTokenRequest
+	 */
+	public final java.lang.Boolean getOAuthAutomaticTokenRequest(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Boolean) getMendixObject().getValue(context, MemberNames.OAuthAutomaticTokenRequest.toString());
+	}
+
+	/**
+	 * Set value of OAuthAutomaticTokenRequest
+	 * @param oauthautomatictokenrequest
+	 */
+	public final void setOAuthAutomaticTokenRequest(java.lang.Boolean oauthautomatictokenrequest)
+	{
+		setOAuthAutomaticTokenRequest(getContext(), oauthautomatictokenrequest);
+	}
+
+	/**
+	 * Set value of OAuthAutomaticTokenRequest
+	 * @param context
+	 * @param oauthautomatictokenrequest
+	 */
+	public final void setOAuthAutomaticTokenRequest(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Boolean oauthautomatictokenrequest)
+	{
+		getMendixObject().setValue(context, MemberNames.OAuthAutomaticTokenRequest.toString(), oauthautomatictokenrequest);
+	}
+
+	/**
+	 * @return value of OAuthAutomaticTokenMargin
+	 */
+	public final java.lang.Integer getOAuthAutomaticTokenMargin()
+	{
+		return getOAuthAutomaticTokenMargin(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of OAuthAutomaticTokenMargin
+	 */
+	public final java.lang.Integer getOAuthAutomaticTokenMargin(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Integer) getMendixObject().getValue(context, MemberNames.OAuthAutomaticTokenMargin.toString());
+	}
+
+	/**
+	 * Set value of OAuthAutomaticTokenMargin
+	 * @param oauthautomatictokenmargin
+	 */
+	public final void setOAuthAutomaticTokenMargin(java.lang.Integer oauthautomatictokenmargin)
+	{
+		setOAuthAutomaticTokenMargin(getContext(), oauthautomatictokenmargin);
+	}
+
+	/**
+	 * Set value of OAuthAutomaticTokenMargin
+	 * @param context
+	 * @param oauthautomatictokenmargin
+	 */
+	public final void setOAuthAutomaticTokenMargin(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer oauthautomatictokenmargin)
+	{
+		getMendixObject().setValue(context, MemberNames.OAuthAutomaticTokenMargin.toString(), oauthautomatictokenmargin);
 	}
 
 	/**

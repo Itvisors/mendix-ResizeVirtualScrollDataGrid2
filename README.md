@@ -27,7 +27,7 @@ Resize Virtual Scroll DataGrid2 and Gallery to the available vertical space
 - Set the page size high enough so sufficient rows are loaded also on larger screens. Usually 50 will be sufficient
 
 ## Header margin correction
-The header height changes often between DataWidget module releases. To avoid having to revisit all widgets to adjust the header height, a correction can be specified using CSS:
+The DataGrid 2 header height changes often between DataWidget module releases. To avoid having to revisit all widgets to adjust the header height, a correction can be specified using CSS:
 
 ```
 // Custom variable and CSS property for ResizeVirtualDataGrid
@@ -37,3 +37,5 @@ $resize-virtualscroll-datagrid-header-margin-correction: 56;
   --resize-virtualscroll-datagrid-header-margin-correction: #{$resize-virtualscroll-datagrid-header-margin-correction};
 }
 ```
+
+This is only relevant for DataGrid 2, for Gallery the value is ignored

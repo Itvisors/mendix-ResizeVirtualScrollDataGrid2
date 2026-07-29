@@ -24,6 +24,18 @@
       "name": "Combo box",
       "version": "2.8.1",
       "appStoreVersionGuid": "147c8275-7a43-4ded-969d-b6196d09c0bc"
+    },
+    {
+      "sha-256": "5b565d39721447414b5a1416417b04beb6d2a6a7c4a98e9b4acb516c633fda3a",
+      "name": "Combo box",
+      "version": "2.9.0",
+      "appStoreVersionGuid": "dce845f4-d051-4161-847c-016c01703caa"
+    },
+    {
+      "sha-256": "d17f0f54fce3bca4f2e3363f9442f052cafdf713a790b56876f27a91c42c413c",
+      "name": "JSON View Lite widget",
+      "version": "3.0.0",
+      "appStoreVersionGuid": "6d29a911-b64c-4e1f-871b-a3d9044045ce"
     }
   ]
 }

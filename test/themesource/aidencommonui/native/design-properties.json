@@ -3,7 +3,7 @@
         {
             "name": "Color",
             "type": "Dropdown",
-            "description": "Change the color of text. (ITV)",
+            "description": "Change the color of text. (Aiden)",
             "options": [
                 {
                     "name": "Contrast low",
@@ -14,7 +14,7 @@
         {
             "name": "Single line",
             "type": "Toggle",
-            "description": "Show a single line only. Show ellipsis (...) if necessary. (ITV)",
+            "description": "Show a single line only. Show ellipsis (...) if necessary.",
             "class": "singleLineTextEllipsis"
         }
     ],
@@ -23,7 +23,7 @@
         {
             "name": "With border",
             "type": "Dropdown",
-            "description": "Show border. (ITV)",
+            "description": "Show border. (Aiden)",
             "options": [
                 {
                     "name": "Primary medium inner spacing",
@@ -42,28 +42,28 @@
         {
             "name": "As text",
             "type": "Toggle",
-            "description": "Show button as text. (ITV)",
+            "description": "Show button as text. (Aiden)",
             "class": "btnAsText"
         },
 
         {
             "name": "Transparent",
             "type": "Toggle",
-            "description": "Transparent, no border. (ITV)",
+            "description": "Transparent, no border. (Aiden)",
             "class": "btnTransparentNoBorder"
         },
 
         {
             "name": "In header",
             "type": "Toggle",
-            "description": "Less vertical margin for use in headers. (ITV)",
+            "description": "Less vertical margin for use in headers. (Aiden)",
             "class": "btnInHeader"
         },
 
         {
             "name": "Dashboard button",
             "type": "Dropdown",
-            "description": "Dashboard button (ITV)",
+            "description": "Dashboard button (Aiden)",
             "options": [
                 {
                     "name": "Badge, primary",
@@ -91,7 +91,7 @@
         {
             "name": "Icon color",
             "type": "Dropdown",
-            "description": "Icon color (ITV)",
+            "description": "Icon color (Aiden)",
             "options": [
                 {
                     "name": "Success",
@@ -123,7 +123,7 @@
         {
             "name": "Text color",
             "type": "Dropdown",
-            "description": "Text color (ITV)",
+            "description": "Text color (Aiden)",
             "options": [
                 {
                     "name": "Success",
@@ -155,7 +155,7 @@
         {
             "name": "Disabled",
             "type": "Dropdown",
-            "description": "Disabled classes, to be used i.s.o. Mendix supplied button type (ITV)",
+            "description": "Disabled classes, to be used i.s.o. Mendix supplied button type (Aiden)",
             "options": [
                 {
                     "name": "Primary disabled",
@@ -183,7 +183,7 @@
         {
             "name": "Text align",
             "type": "Dropdown",
-            "description": "Text align, centered by default. (ITV)",
+            "description": "Text align, centered by default. (Aiden)",
             "options": [
                 {
                     "name": "Start",

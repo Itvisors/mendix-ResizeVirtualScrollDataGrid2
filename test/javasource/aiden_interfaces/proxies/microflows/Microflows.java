@@ -55,6 +55,25 @@ public final class Microflows
 	{
 		aCT_GenerateEnvironmentsBuilder().execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Host_DeleteBuilder(
+		aiden_interfaces.proxies.ViewHostOverview _viewHostOverview
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Aiden_Interfaces.ACT_Host_Delete");
+		builder = builder.withParam("ViewHostOverview", _viewHostOverview);
+		return builder;
+	}
+
+	public static void aCT_Host_Delete(
+		IContext context,
+		aiden_interfaces.proxies.ViewHostOverview _viewHostOverview
+	)
+	{
+		aCT_Host_DeleteBuilder(
+				_viewHostOverview
+			)
+			.execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Host_SaveNewAzureMetricsBuilder(
 		java.lang.String _tenantID,
 		java.lang.String _clientID,
@@ -91,6 +110,25 @@ public final class Microflows
 				_dataCollectionEndpointURL,
 				_dataCollectionRuleID,
 				_stream
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_Host_TestRetrieveLatestTokenBuilder(
+		aiden_interfaces.proxies.Host _host
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Aiden_Interfaces.ACT_Host_TestRetrieveLatestToken");
+		builder = builder.withParam("Host", _host);
+		return builder;
+	}
+
+	public static void aCT_Host_TestRetrieveLatestToken(
+		IContext context,
+		aiden_interfaces.proxies.Host _host
+	)
+	{
+		aCT_Host_TestRetrieveLatestTokenBuilder(
+				_host
 			)
 			.execute(context);
 	}
@@ -198,26 +236,6 @@ public final class Microflows
 	public static void aSu_Aiden_Interfaces(IContext context)
 	{
 		aSu_Aiden_InterfacesBuilder().execute(context);
-	}
-	public static com.mendix.core.actionmanagement.MicroflowCallBuilder cALC_GetNumberOfServicesBuilder(
-		aiden_interfaces.proxies.Host _host
-	)
-	{
-		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Aiden_Interfaces.CALC_GetNumberOfServices");
-		builder = builder.withParam("Host", _host);
-		return builder;
-	}
-
-	public static java.lang.Long cALC_GetNumberOfServices(
-		IContext context,
-		aiden_interfaces.proxies.Host _host
-	)
-	{
-		Object result = cALC_GetNumberOfServicesBuilder(
-				_host
-			)
-			.execute(context);
-		return (java.lang.Long) result;
 	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder convert_DateToEpochBuilder(
 		java.util.Date _conditionValidityEndDate
@@ -687,6 +705,30 @@ public final class Microflows
 			)
 			.execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sUB_CheckSubscriptionKeyBuilder(
+		aiden_interfaces.proxies.Host _host,
+		java.lang.String _valueToCheck
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Aiden_Interfaces.SUB_CheckSubscriptionKey");
+		builder = builder.withParam("Host", _host);
+		builder = builder.withParam("ValueToCheck", _valueToCheck);
+		return builder;
+	}
+
+	public static boolean sUB_CheckSubscriptionKey(
+		IContext context,
+		aiden_interfaces.proxies.Host _host,
+		java.lang.String _valueToCheck
+	)
+	{
+		Object result = sUB_CheckSubscriptionKeyBuilder(
+				_host,
+				_valueToCheck
+			)
+			.execute(context);
+		return (boolean) result;
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sUB_CleanupSettingsBuilder()
 	{
 		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Aiden_Interfaces.SUB_CleanupSettings");
@@ -805,6 +847,40 @@ public final class Microflows
 			)
 			.execute(context);
 		return result == null ? null : aiden_interfaces.proxies.Service.initialize(context, (IMendixObject) result);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sUB_Host_AutomaticTokenRequestBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Aiden_Interfaces.SUB_Host_AutomaticTokenRequest");
+		return builder;
+	}
+
+	public static void sUB_Host_AutomaticTokenRequest(IContext context)
+	{
+		sUB_Host_AutomaticTokenRequestBuilder().execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sUB_Host_RetrieveLatestTokenBuilder(
+		aiden_interfaces.proxies.Host _host,
+		aiden_interfaces.proxies.QueryHelper _queryHelper
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("Aiden_Interfaces.SUB_Host_RetrieveLatestToken");
+		builder = builder.withParam("Host", _host);
+		builder = builder.withParam("QueryHelper", _queryHelper);
+		return builder;
+	}
+
+	public static aiden_interfaces.proxies.Token sUB_Host_RetrieveLatestToken(
+		IContext context,
+		aiden_interfaces.proxies.Host _host,
+		aiden_interfaces.proxies.QueryHelper _queryHelper
+	)
+	{
+		Object result = sUB_Host_RetrieveLatestTokenBuilder(
+				_host,
+				_queryHelper
+			)
+			.execute(context);
+		return result == null ? null : aiden_interfaces.proxies.Token.initialize(context, (IMendixObject) result);
 	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sUB_Token_CleanupBuilder()
 	{

@@ -55,3 +55,10 @@ div.widget-language-selector.languageSelectorLight {
         }
     }
 }
+
+// Reduce margin around column selection items and hide any overflow i.s.o just horizontal
+.column-selectors li label {
+    margin: 4px;
+    overflow: hidden;
+}
+

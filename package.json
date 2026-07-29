@@ -1,7 +1,7 @@
 {
   "name": "resizevirtualscrolldatagrid",
   "widgetName": "ResizeVirtualScrollDataGrid",
-  "version": "3.2.0",
+  "version": "4.0.0",
   "description": "Resize Virtual Scroll DataGrid2",
   "copyright": "Aiden 2025",
   "author": "Marcel Groeneweg",
@@ -25,21 +25,21 @@
     "release": "pluggable-widgets-tools release:web"
   },
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "11.8.1"
+    "@mendix/pluggable-widgets-tools": "11.12.0"
   },
   "dependencies": {},
   "resolutions": {
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "react-native": "0.78.2",
-    "@types/react": "19.0.0",
-    "@types/react-dom": "19.0.0"
+    "react": "19.2.3",
+    "react-native": "0.84.1",
+    "react-dom": "19.2.3",
+    "@types/react": "19.2.3",
+    "@types/react-dom": "19.2.3"
   },
   "overrides": {
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "react-native": "0.78.2",
-    "@types/react": "19.0.0",
-    "@types/react-dom": "19.0.0"
+    "react": "19.2.3",
+    "react-native": "0.84.1",
+    "react-dom": "19.2.3",
+    "@types/react": "19.2.3",
+    "@types/react-dom": "19.2.3"
   }
 }

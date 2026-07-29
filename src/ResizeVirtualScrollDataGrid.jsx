@@ -1,28 +1,26 @@
-import { useEffect, useRef, useState } from "react";
 import { useElementHeight } from "./hooks/useElementHeight";
+import { useRef } from "react";
+
+// Get the header margin correction once, at module level
+const headerMarginCorrection = (() => {
+    const value = getComputedStyle(document.documentElement)
+        .getPropertyValue("--resize-virtualscroll-datagrid-header-margin-correction")
+        .trim();
+    return value ? Number(value) : 0;
+})();
 
 export function ResizeVirtualScrollDataGrid(props) {
     const slotRef = useRef(null);
     const elementHeight = useElementHeight(slotRef);
-    const [headerMarginCorrection, setHeaderMarginCorrection] = useState(0);
-
-    useEffect(() => {
-        // Lees de CSS custom property uit van het root element
-        const value = getComputedStyle(document.documentElement)
-            .getPropertyValue("--resize-virtualscroll-datagrid-header-margin-correction")
-            .trim();
-
-        if (value) {
-            const numericValue = Number(value);
-            setHeaderMarginCorrection(numericValue);
-        }
-    }, []);
+    const { widgetType } = props;
 
     // Set the height on a custom style that targets the data grid 2 or gallery in the widget contents
     const className = props.name + " resizeVirtualScrollDataGrid";
-    const gridHeight = elementHeight - props.headerHeight - props.footerHeight + headerMarginCorrection;
+    const correction = widgetType === "datagrid2" ? headerMarginCorrection : 0;
+    const gridHeight = elementHeight - props.headerHeight - props.footerHeight + correction;
+
     let dataGridStyle = null;
-    switch (props.widgetType) {
+    switch (widgetType) {
         case "datagrid2":
             dataGridStyle = "div." + props.name + " { div.widget-datagrid-grid { max-height: " + gridHeight + "px }}";
             break;

@@ -1,8 +1,8 @@
-.btn-no-background,
-.btn-no-background:focus,
-.btn-no-background:visited,
-.btn-no-background:any-link,
-.btn-no-background:active {
+button.btn.btn-no-background,
+button.btn.btn-no-background:focus,
+button.btn.btn-no-background:visited,
+button.btn.btn-no-background:any-link,
+button.btn.btn-no-background:active {
         background-color: transparent;
     border: none;
     &:hover {

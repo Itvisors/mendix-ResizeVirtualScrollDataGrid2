@@ -6,13 +6,13 @@ package aiden_interfaces.proxies;
 
 public enum ENUM_MetricPropertyKey
 {
-	otherSystem("4a3deb7a-fceb-4fa9-adfe-88f9480d0cfa"),
-	interfaceName("ed7f7e1e-813b-47fb-b978-2733bfc4908b"),
-	syncType("d3fe9bdb-6208-4b88-b9bd-aab216927105"),
-	functionName("6c8d8ac8-46e9-4d11-a009-7d4ffccdd9cc"),
-	status("4e64a3dc-aec6-46fe-988a-e35d63505c40"),
-	environment("22445bad-3b28-4dd2-b334-caf529b299d9"),
-	applicationName("6c1f71fa-6f29-48a5-a710-8de6c4846f0c");
+	otherSystem("c54d01ab-be74-46e0-b0d4-30677df8c28a"),
+	interfaceName("7bfb6441-6047-4c74-83f9-7ec2ebfbd40e"),
+	syncType("d0547cc8-5820-42e6-8967-cb8cff8740cc"),
+	functionName("e94d3eb8-61d3-4df0-86bd-edceb7a41d61"),
+	status("0bb53093-2022-4f6e-94f9-21280bfb7bee"),
+	environment("3b2cc18f-4425-4d07-be95-6810dcf7faa3"),
+	applicationName("c15cfd9d-77fd-434c-8f48-23cfba0f2c2d");
 
 	private final java.lang.String i18nCaptionKey;
 	

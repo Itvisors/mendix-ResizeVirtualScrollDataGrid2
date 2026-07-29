@@ -6,7 +6,6 @@
 // - the code between BEGIN EXTRA CODE and END EXTRA CODE
 // Other code you write will be lost the next time you deploy the project.
 import { Big } from "big.js";
-import Geolocation from '@react-native-community/geolocation';
 
 // BEGIN EXTRA CODE
 // END EXTRA CODE
@@ -28,116 +27,6 @@ import Geolocation from '@react-native-community/geolocation';
  */
 export async function GetCurrentLocationMinimumAccuracy(timeout, maximumAge, highAccuracy, minimumAccuracy) {
 	// BEGIN USER CODE
-    let reactNativeModule;
-    let geolocationModule;
-    if (navigator && navigator.product === "ReactNative") {
-        reactNativeModule = require("react-native");
-        if (!reactNativeModule) {
-            return Promise.reject(new Error("React Native module could not be found"));
-        }
-        if (reactNativeModule.NativeModules.RNFusedLocation) {
-            geolocationModule = (await import('@react-native-community/geolocation')).default;
-        }
-        else if (reactNativeModule.NativeModules.RNCGeolocation) {
-            geolocationModule = Geolocation;
-        }
-        else {
-            return Promise.reject(new Error("Geolocation module could not be found"));
-        }
-    }
-    else if (navigator && navigator.geolocation) {
-        geolocationModule = navigator.geolocation;
-    }
-    else {
-        return Promise.reject(new Error("Geolocation module could not be found"));
-    }
-    return new Promise((resolve, reject) => {
-        if (!geolocationModule) {
-            return reject(new Error("Geolocation module could not be found"));
-        }
-        const options = getOptions();
-        // This action is only required while running in PWA or hybrid.
-        if (navigator && (!navigator.product || navigator.product !== "ReactNative")) {
-            // This ensures the browser will not ignore the maximumAge https://stackoverflow.com/questions/3397585/navigator-geolocation-getcurrentposition-sometimes-works-sometimes-doesnt/31916631#31916631
-            geolocationModule.getCurrentPosition(
-            // eslint-disable-next-line @typescript-eslint/no-empty-function
-            () => { }, 
-            // eslint-disable-next-line @typescript-eslint/no-empty-function
-            () => { }, {});
-        }
-        const timeoutId = setTimeout(onTimeout, Number(timeout));
-        const watchId = geolocationModule.watchPosition(onSuccess, onError, options);
-        let lastAccruedPosition;
-        function createGeolocationObject(position) {
-            mx.data.create({
-                entity: "NanoflowCommons.Geolocation",
-                callback: mxObject => resolve(mapPositionToMxObject(mxObject, position)),
-                error: () => reject(new Error("Could not create 'NanoflowCommons.Geolocation' object to store location"))
-            });
-        }
-        function onTimeout() {
-            geolocationModule === null || geolocationModule === void 0 ? void 0 : geolocationModule.clearWatch(watchId);
-            if (lastAccruedPosition) {
-                createGeolocationObject(lastAccruedPosition);
-            }
-            else {
-                reject(new Error("Timeout expired"));
-            }
-        }
-        function onSuccess(position) {
-            if (!minimumAccuracy || Number(minimumAccuracy) >= position.coords.accuracy) {
-                clearTimeout(timeoutId);
-                geolocationModule === null || geolocationModule === void 0 ? void 0 : geolocationModule.clearWatch(watchId);
-                createGeolocationObject(position);
-            }
-            else {
-                if (!lastAccruedPosition || position.coords.accuracy < lastAccruedPosition.coords.accuracy) {
-                    lastAccruedPosition = position;
-                }
-            }
-        }
-        function onError(error) {
-            return reject(new Error(error.message));
-        }
-        function getOptions() {
-            let timeoutNumber = timeout && Number(timeout.toString());
-            const maximumAgeNumber = maximumAge && Number(maximumAge.toString());
-            // If the timeout is 0 or undefined (empty), it causes a crash on iOS.
-            // If the timeout is undefined (empty); we set timeout to 30 sec (default timeout)
-            // If the timeout is 0; we set timeout to 1 hour (no timeout)
-            if ((reactNativeModule === null || reactNativeModule === void 0 ? void 0 : reactNativeModule.Platform.OS) === "ios") {
-                if (timeoutNumber === undefined) {
-                    timeoutNumber = 30000;
-                }
-                else if (timeoutNumber === 0) {
-                    timeoutNumber = 3600000;
-                }
-            }
-            return {
-                timeout: timeoutNumber,
-                maximumAge: maximumAgeNumber,
-                enableHighAccuracy: highAccuracy
-            };
-        }
-        function mapPositionToMxObject(mxObject, position) {
-            mxObject.set("Timestamp", new Date(position.timestamp));
-            mxObject.set("Latitude", new Big(position.coords.latitude.toFixed(8)));
-            mxObject.set("Longitude", new Big(position.coords.longitude.toFixed(8)));
-            mxObject.set("Accuracy", new Big(position.coords.accuracy.toFixed(8)));
-            if (position.coords.altitude != null) {
-                mxObject.set("Altitude", new Big(position.coords.altitude.toFixed(8)));
-            }
-            if (position.coords.altitudeAccuracy != null && position.coords.altitudeAccuracy !== -1) {
-                mxObject.set("AltitudeAccuracy", new Big(position.coords.altitudeAccuracy.toFixed(8)));
-            }
-            if (position.coords.heading != null && position.coords.heading !== -1) {
-                mxObject.set("Heading", new Big(position.coords.heading.toFixed(8)));
-            }
-            if (position.coords.speed != null && position.coords.speed !== -1) {
-                mxObject.set("Speed", new Big(position.coords.speed.toFixed(8)));
-            }
-            return mxObject;
-        }
-    });
+	throw new Error("JavaScript action was not implemented");
 	// END USER CODE
 }
